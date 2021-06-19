@@ -1,3 +1,5 @@
 set FLASK_APP=app
-export FLASK_ENV=development
-export FLASK_RUN_CERT=adhoc
+set FLASK_ENV=development
+set FLASK_RUN_CERT=adhoc
+if __name__ == "__main__":
+    app.run(ssl_context='adhoc')
